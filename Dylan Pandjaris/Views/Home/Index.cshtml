@@ -1,0 +1,109 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div style="position:relative;text-align:center;color:white;">
+    <img src="~/images/background1.jpeg" style="width:100%;" />
+    <div style="max-width:100%; position:absolute;top:40%;left:50%;transform:translate(-50%, -50%)">
+        <p style="border-right: solid 3px;
+        color: turquoise;
+        white-space: nowrap;
+        overflow: hidden;
+        font-family: 'Source Code Pro', monospace;
+        font-size: 52px;
+        color: rgba(255,255,255,1);
+        margin: 0 auto;
+        background-color: black;
+        animation: animated-text 1.25s steps(29,end) 1s 1 normal both, animated-cursor 600ms steps(29,end) infinite;">
+            Dylan Pandjaris
+        </p>
+
+        <p style="border-right: solid 3px;
+        color: turquoise;
+        white-space: nowrap;
+        overflow: hidden;
+        font-family: 'Source Code Pro', monospace;
+        font-size: 20px;
+        color: rgba(255,255,255,1);
+        margin: 0 auto;
+        background-color: black;
+        animation: animated-text 1.25s steps(29,end) 1s 1 normal both, animated-cursor 600ms steps(29,end) infinite;">
+            <b>B.S. Industrial Engineering</b> / 3.57 GPA
+        </p>
+
+        <p style="border-right: solid 3px;
+        color: turquoise;
+        white-space: nowrap;
+        overflow: hidden;
+        font-family: 'Source Code Pro', monospace;
+        font-size: 20px;
+        color: rgba(255,255,255,1);
+        margin: 0 auto;
+        background-color: black;
+        animation: animated-text 1.25s steps(29,end) 1s 1 normal both, animated-cursor 600ms steps(29,end) infinite;">
+            Minors: Business, Statistics
+        </p>
+
+        <p style="border-right: solid 3px;
+        color: turquoise;
+        white-space: nowrap;
+        overflow: hidden;
+        font-family: 'Source Code Pro', monospace;
+        font-size: 20px;
+        color: rgba(255,255,255,1);
+        margin: 0 auto;
+        background-color: black;
+        animation: animated-text 1.25s steps(29,end) 1s 1 normal both, animated-cursor 600ms steps(29,end) infinite;">
+            Kansas State University
+        </p>
+
+        <p style="border-right: solid 3px;
+        color: turquoise;
+        white-space: nowrap;
+        overflow: hidden;
+        font-family: 'Source Code Pro', monospace;
+        font-size: 20px;
+        color: rgba(255,255,255,1);
+        margin: 0 auto;
+        background-color: black;
+        animation: animated-text 1.25s steps(29,end) 1s 1 normal both, animated-cursor 600ms steps(29,end) infinite;">
+            Expected Graduation: May 2021
+        </p>
+    </div>
+</div>
+<br />
+<div class="container" style="text-align:center;width:70%;">
+    <main role="main" class="pb-3">
+        <h2>Thanks for visiting my site!</h2>
+        <p style="font-size:20px;color:black">My name is Dylan Pandjaris, and I am searching for a Data Scientist/Engineer role in the Kansas City area. I have experience using multiple big data platforms, web frameworks, and an assortment of programming languages. I recently interned at Textron Aviation as an IT Developer on the Engineering Application Development team, and am currently working on a research team at Kansas State University as a Data Scientist. Click below to view some of my work.</p>
+    </main>
+</div>
+
+<div class="text-center">
+    <span>
+        <a class="btn btn-outline-dark btn-lg" style="margin-bottom:5%;margin-top:5%;margin-left:10%;margin-right:10%;" asp-area="" asp-controller="About" asp-action="Index">About Me</a>
+    </span>
+    <span>
+        <a class="btn btn-outline-dark btn-lg" style="margin-bottom:5%;margin-top:5%;margin-left:10%;margin-right:10%;" asp-area="" asp-controller="Project" asp-action="Index">My Projects</a>
+    </span>
+    <span>
+        <a class="btn btn-outline-dark btn-lg" style="margin-bottom:5%;margin-top:5%;margin-left:10%;margin-right:10%;" asp-area="" asp-controller="Resume" asp-action="Index">My Resume</a>
+    </span>
+</div>
+
+<script>
+    var content = 'If life is so blue, then select another colour from the rainbow';
+
+    var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
+
+
+    $(ele).hide().appendTo('p').each(function (i) {
+        $(this).delay(100 * i).css({
+            display: 'inline',
+            opacity: 0
+        }).animate({
+            opacity: 1
+        }, 100);
+    });
+</script>

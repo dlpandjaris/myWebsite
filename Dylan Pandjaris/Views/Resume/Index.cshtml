@@ -1,0 +1,368 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+
+
+
+@*<div class="container">
+        <main role="main" class="pb-3">
+            <div class="text-center">
+                <div class="columns download">
+                    <p style="padding-top:2vh;">
+                        <button class="btn btn-outline-info" href="~/images/Resume_2020.pdf">Preview CV</button>
+                        <button class="btn btn-outline-success" href="images/Resume_2020.pdf" download>
+                            <i class="fa fa-download"></i>Download CV
+                        </button>
+                        <br />
+                        <button onclick="showWorkExperience();" class="btn btn-outline-dark" style="width:20vw;">Work Experience</button>
+                        <button class="btn btn-outline-dark" style="width:20vw;">Technical Skills</button>
+                        <button class="btn btn-outline-dark" style="width:20vw;">Campus Involvement</button>
+                        <button class="btn btn-outline-dark" style="width:20vw;">Coursework</button>
+                    </p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="workExperienceDiv">Work Experience</div>
+    <div id="technicalSkillsDiv">Technical Skills</div>
+    <div id="campusInvolvementDiv">Campus Involvement</div>
+    <div id="courseworkDiv">Coursework</div>*@
+
+
+<div class="text-center" style="background-image: url('images/background1.jpeg')">
+    <div class="w3-bar w3-black" style="padding-top:2vh;">
+        <button class="btn btn-outline-light" onclick="openTab('workExperienceDiv')">Work Experience</button>
+        <button class="btn btn-outline-light" onclick="openTab('technicalSkillsDiv')">Technical Skills</button>
+        <button class="btn btn-outline-light" onclick="openTab('campusInvolvementDiv')">Campus Involvement</button>
+        <button class="btn btn-outline-light" onclick="openTab('courseworkDiv')">Relevant Coursework</button>
+        <button class="btn btn-outline-info" onclick="openTab('CVDiv')">Preview/Download CV</button>
+        @*<button class="btn btn-outline-success" href="images/Resume_2020.pdf" download>Download CV</button>*@
+    </div>
+
+    <br/>
+
+    <div id="workExperienceDiv" class="tab">
+        <div class="container" style="height: auto; padding-bottom: 2vh;">
+            <div class="jumbotron">
+                <div class="text-center">
+                    <h2>Work Experience</h2>
+                </div>
+                <br/>
+                <div class="text-left">
+                    <ul style="list-style-type:none; padding-left:0px;">
+                        <li>
+                            <h4>UNDERGRADUATE RESEARCH ASSOCIATE / <i>Kansas State University</i></h4>
+                            <h6>September 2019 - Present</h6>
+                            <ul style="list-style-type:none;">
+                                <li style="list-style-type:square">
+                                    <p>
+                                        Wrote several python programs to analyze and manipulate 9.6 million data points
+                                    </p>
+                                </li>
+                                <li style="list-style-type:square">
+                                    <p>
+                                        Built small-scale neural networks to classify gender of subjects using 25 biomarkers
+                                    </p>
+                                </li>
+                                <li style="list-style-type:square">
+                                    <p>
+                                        Produced a visualization application to identify compromised data
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <br/>
+
+                    <ul style="list-style-type:none; padding-left:0px;">
+                        <li>
+                            <h4>IT DEVELOPER INTERN / <i>Textron Aviation</i></h4>
+                            <h6>Just - August 2020</h6>
+                            <ul style="list-style-type:none;">
+                                <li style="list-style-type:square">
+                                    <p>
+                                        Produced a highly dynamic internal website with ASP.NET Core MVC
+                                    </p>
+                                </li>
+                                <li style="list-style-type:square">
+                                    <p>
+                                        Built an IT solution to help enterprise suppliers meet DoD Requirements
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <br/>
+
+                    <ul style="list-style-type:none; padding-left:0px;">
+                        <li>
+                            <h4>WEB DEVELOPER / <i>Web Page Consulting with Heather Morgan</i></h4>
+                            <h6>August 2017 - December 2018</h6>
+                            <ul style="list-style-type:none;">
+                                <li style="list-style-type:square">
+                                    <p>
+                                        Built and published web pages for small businesses
+                                    </p>
+                                </li>
+                                <li style="list-style-type:square">
+                                    <p>
+                                        Produced a tutorial for novice web developers to reduce the learning curve
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div id="technicalSkillsDiv" class="tab" style="display:none">
+        <div class="container" style="height: auto; padding-bottom: 2vh;">
+            <div class="jumbotron">
+                <div class="text-center">
+                    <h2>Technical Skills</h2>
+                </div>
+                <br />
+                <div class="text-left">
+                    <div class="row">
+                        <div class="column">
+                            Python
+                        </div>
+                        <div class="column">
+                            C#
+                        </div>
+                        <div class="column">
+                            SAS
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            SQL
+                        </div>
+                        <div class="column">
+                            JavaScript
+                        </div>
+                        <div class="column">
+                            CPLEX
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            MatLAB
+                        </div>
+                        <div class="column">
+                            CSS
+                        </div>
+                        <div class="column">
+                            Linux
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            Power BI
+                        </div>
+                        <div class="column">
+                            HTML
+                        </div>
+                        <div class="column">
+                            AutoCAD
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            Simeio
+                        </div>
+                        <div class="column">
+                            Jquery
+                        </div>
+                        <div class="column">
+                            SolidWorks
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            R
+                        </div>
+                        <div class="column">
+                            C
+                        </div>
+                        <div class="column">
+                            Revit
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+
+
+    <div id="campusInvolvementDiv" class="tab" style="display:none">
+        <div class="container" style="height: auto; padding-bottom: 2vh;">
+            <div class="jumbotron">
+                <div class="text-center">
+                    <h2>Campus Involvement</h2>
+                </div>
+                <br />
+                <div class="text-left">
+                    <ul style="list-style-type:none; padding-left:0px;">
+                        <li>
+                            <h4>CONSULTANT / <i>K-Solutions Student Consulting</i></h4>
+                            <h6>January 2018 - Present</h6>
+                            <ul style="list-style-type:none;">
+                                <li style="list-style-type:square">
+                                    <p>
+                                        Performed analysis of scheduling process and shortages of Kramer Dining Hall
+                                    </p>
+                                </li>
+                                <li style="list-style-type:square">
+                                    <p>
+                                        Decreased employee shortages by implementing low cost marketing tactics
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <br />
+
+                    <ul style="list-style-type:none; padding-left:0px;">
+                        <li>
+                            <h4>ANALYST / <i>Engineering Without Borders</i></h4>
+                            <h6>Just - August 2020</h6>
+                            <ul style="list-style-type:none;">
+                                <li style="list-style-type:square">
+                                    <p>
+                                        Worked with a team to produce multiple designs for a retaining wall using Revit
+                                    </p>
+                                </li>
+                                <li style="list-style-type:square">
+                                    <p>
+                                        Performed a cost analysis of each design and a trip to Guatemala
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <br />
+
+                    <ul style="list-style-type:none; padding-left:0px;">
+                        <li>
+                            <h4>FOUNDING MEMBER / <i>IMSE Skill Excelerator Program</i></h4>
+                            <h6>August 2017 - May 2019</h6>
+                            <ul style="list-style-type:none;">
+                                <li style="list-style-type:square">
+                                    <p>
+                                        Encourage members to connect and converse with KSU IMSE alumni
+                                    </p>
+                                </li>
+                                <li style="list-style-type:square">
+                                    <p>
+                                        Exploring opportunities to help the community
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <br/>
+
+                    <ul style="list-style-type:none; padding-left:0px;">
+                        <li>
+                            <h4>MEMBER / <i>Phi Delta Theta Fraternity</i></h4>
+                            <h6>August 2017 - Present</h6>
+                            <ul style="list-style-type:none;">
+                                <li style="list-style-type:square">
+                                    <p>
+                                        Vice President of Social
+                                    </p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="courseworkDiv" class="tab" style="display:none">
+        <div class="container" style="height:auto; padding-bottom:2vh;">
+            <div class="jumbotron">
+                <div class="text-center">
+                    <h2>Relevant Coursework</h2>
+                </div>
+
+                <br/>
+
+                <div class="row">
+                    <div class="column2">
+                        Data Analytics with Python
+                    </div>
+                    <div class="column2">
+                        Python Machine Learning
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column2">
+                        Computer Applications for Industrial Engineers
+                    </div>
+                    <div class="column2">
+                        Operations Research (1 & 2)
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column2">
+                        Machine Learning with Encog 3 (1, 2 & 3)
+                    </div>
+                    <div class="column2">
+                        Python Automation
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column2">
+                        Engineering Economic Analysis
+                    </div>
+                    <div class="column2">
+                        Industrial Simulation
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column2">
+                        Game Theory
+                    </div>
+                    <div class="column2">
+                        Big Data Engineering
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div id="CVDiv" class="tab" style="display:none;">
+            <embed src="~/images/Resume_2020.pdf" allowfullscreen="true" style="height:65vh; width:80vw; padding-bottom:2vh;" />
+        </div>
+    </div>
+
+
+    <script>
+        function openTab(tabName) {
+            var i;
+            var x = document.getElementsByClassName("tab");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            };
+            document.getElementById(tabName).style.display = "block";
+        };
+    </script>
