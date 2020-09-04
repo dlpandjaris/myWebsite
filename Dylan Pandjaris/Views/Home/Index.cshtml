@@ -1,4 +1,4 @@
-﻿@{
+@{
     ViewData["Title"] = "Home Page";
 }
 
@@ -14,7 +14,7 @@
         font-size: 52px;
         color: rgba(255,255,255,1);
         margin: 0 auto;
-        background-color: black;
+/*        background-color: black;*/
         animation: animated-text 1.25s steps(29,end) 1s 1 normal both, animated-cursor 600ms steps(29,end) infinite;">
             Dylan Pandjaris
         </p>
@@ -27,7 +27,7 @@
         font-size: 20px;
         color: rgba(255,255,255,1);
         margin: 0 auto;
-        background-color: black;
+/*        background-color: black;*/
         animation: animated-text 1.25s steps(29,end) 1s 1 normal both, animated-cursor 600ms steps(29,end) infinite;">
             <b>B.S. Industrial Engineering</b> / 3.57 GPA
         </p>
@@ -40,7 +40,7 @@
         font-size: 20px;
         color: rgba(255,255,255,1);
         margin: 0 auto;
-        background-color: black;
+/*        background-color: black;*/
         animation: animated-text 1.25s steps(29,end) 1s 1 normal both, animated-cursor 600ms steps(29,end) infinite;">
             Minors: Business, Statistics
         </p>
@@ -53,7 +53,7 @@
         font-size: 20px;
         color: rgba(255,255,255,1);
         margin: 0 auto;
-        background-color: black;
+/*        background-color: black;*/
         animation: animated-text 1.25s steps(29,end) 1s 1 normal both, animated-cursor 600ms steps(29,end) infinite;">
             Kansas State University
         </p>
@@ -66,7 +66,7 @@
         font-size: 20px;
         color: rgba(255,255,255,1);
         margin: 0 auto;
-        background-color: black;
+/*        background-color: black;*/
         animation: animated-text 1.25s steps(29,end) 1s 1 normal both, animated-cursor 600ms steps(29,end) infinite;">
             Expected Graduation: May 2021
         </p>
@@ -91,19 +91,3 @@
         <a class="btn btn-outline-dark btn-lg" style="margin-bottom:5%;margin-top:5%;margin-left:10%;margin-right:10%;" asp-area="" asp-controller="Resume" asp-action="Index">My Resume</a>
     </span>
 </div>
-
-<script>
-    var content = 'If life is so blue, then select another colour from the rainbow';
-
-    var ele = '<span>' + content.split('').join('</span><span>') + '</span>';
-
-
-    $(ele).hide().appendTo('p').each(function (i) {
-        $(this).delay(100 * i).css({
-            display: 'inline',
-            opacity: 0
-        }).animate({
-            opacity: 1
-        }, 100);
-    });
-</script>
