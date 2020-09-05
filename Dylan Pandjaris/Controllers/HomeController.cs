@@ -22,6 +22,11 @@ namespace Dylan_Pandjaris.Controllers
         {
             return View();
         }
+        
+        public IActionResult happybirthday()
+        {
+            return View();
+        }
 
         public IActionResult About()
         {
