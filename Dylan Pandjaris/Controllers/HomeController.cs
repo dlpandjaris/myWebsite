@@ -27,6 +27,11 @@ namespace Dylan_Pandjaris.Controllers
         {
             return View();
         }
+        
+        public IActionResult googoogaga()
+        {
+            return View();
+        }
 
         public IActionResult About()
         {
